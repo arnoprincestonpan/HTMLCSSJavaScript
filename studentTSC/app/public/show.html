@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Dynamically create table</title>
+</head>
+
+<body onload="getData()">
+    <div class="container">
+        <h3>
+            <h1 class="text-center">Dynamically create table</h1>
+        </h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>School</th>
+                    <th>Started</th>
+                </tr>
+            </thead>
+            <tbody id="tbl">
+
+            </tbody>
+        </table>
+
+        <pre id="preOutput" style="visibility: hidden;"></pre>
+
+        <script>
+            var getData = async function () {
+                await fetch('http://localhost:3000/api/students', {})
+                    .then((response) => {
+                        return response.json();
+                    })
+                    .then(data => {
+                        displayInTable(data);
+                        //showResponse(data);
+                    });
+                return false
+            }
+
+            var displayInTable = function (data) {
+                if (data.length > 0) {
+                    var html = "";
+                    data.forEach((item) => {
+                        html += `<tr>`;
+                        html += `<td> ${item.FirstName} ${item.LastName} </td>`;
+                        html += `<td> ${item.School} </td>`;
+                        html += `<td> ${item.StartDate} </td>`;
+                        html += `</tr>`;
+                    });
+                    document.getElementById('tbl').innerHTML = html;
+                }
+            }
+
+            var showResponse = async function (data) {
+                const pre = document.getElementById('preOutput');
+                pre.style.visibility = "visible";
+                pre.innerHTML = JSON.stringify(data, null, 4);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
