@@ -45,7 +45,7 @@
     If the dice has the same number it is double the sum in points unless it is a double one, in that case that player loses.
 
 ### Interview Question
-    A fun practice of an interview question that happened in December 2022. 
+    A fun practice of an interview question that happened in December 2022. See markdown inside folder.
 
 ###### Note: Please see code for futher details.
 
