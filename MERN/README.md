@@ -43,3 +43,5 @@ So that I view detailed info for the selected Pokémon
 #### Acceptance Criteria:
 • The detailed info should include the selected Pokémon name, type(s), and stats like HP, Attack Sp., ...etc.  
 • Pokémon image should be displayed  
+
+Quick Walkthrough: https://youtu.be/JjhbmylzQcI 
