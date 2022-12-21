@@ -49,7 +49,11 @@
     
 ## MERN
 
-### Term Build-up Assignment that uses the MERN Stack to make API data useful. 
+### Term Build-up Assignment that uses the MERN Stack to make API data useful. Utilizes MongoDB, Express.js, React.js and Node.js. 
+
+## Student TSC
+
+### A small project practicing the use of TypeScript. Utilizing MongoDB, Cors, Controllers and Docker. 
 
 ###### Note: Please see code for futher details.
 
