@@ -1,8 +1,6 @@
 # Table of Contents
-===================
 
 ## HTMLandCSS
--------------
 
 ### Final Project
     A small blog about myself.
@@ -40,10 +38,12 @@
     And increment the cost for the quantity of the product.
 ### Assignment 7
     A page that rotates a bicycle. A image is looked to look like a gif of a rotating bicycle.  
-    An instruction pop up will show up if there is no activity. Start will not increase in speed if pressed multiple times. Stop won't restart the animation. 
+    An instruction pop up will show up if there is no activity. Start will not increase in speed if pressed multiple times. 
+    Stop won't restart the animation. 
 ### Final Project
     A Dice game that has 3 rounds. The user will use luck to see if he wins.  
-    The person with the highest # wins. If the dice has the same number it is double the sum in points unless it is a double one, in that case that player loses.
+    The person with the highest # wins. 
+    If the dice has the same number it is double the sum in points unless it is a double one, in that case that player loses.
 
 ###### Note: Please see code for futher details.
 
