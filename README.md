@@ -1,20 +1,23 @@
-#Table of Contents
+# Table of Contents
 
-##HTMLandCSS
+## HTMLandCSS
 
-###Final Project
-    A small blog about myself.
-###Midterm Project
-    A information page populated with "Lorem Ipsum".
-###homework 2
-    Simple intro about myself.
-###homework 3
+### Final Project
+A small blog about myself.
+
+### Midterm Project
+
+A information page populated with "Lorem Ipsum".
+### homework 2
+
+Simple intro about myself.
+### homework 3
     A brief biography of me.
-###homework 4
+### homework 4
     Show case of some GIMP editing and special effects of css for image and button.
-###homework 5
+### homework 5
     Brief layout of a known news website.
-###homework 6
+### homework 6
     A simple none-working form.
 
 ##JavaScript
