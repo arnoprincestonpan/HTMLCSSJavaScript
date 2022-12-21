@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+name : arno princeston pan
+class: comp 1850 
+date : 10/23/2020
+notes: Final Project - Page - About Me
+-->
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="wrapper"> <!-- make everything column -->
+		
+			<div id="banner">
+				<h3>"Don't Starve Just Eat"</h3>
+			</div>
+			
+			<header id="header">
+				<h1>Just Eating</h1>
+				<p>Your source to your favorite local restaurants and food sources.</p>
+			</header>
+			
+			<nav id="navwrapper">
+				<ul style="list-style-image: url('images/missing_image_resized.png');">
+					<li style="list-style-image: url('images/home_resized.png');"><a href="index.html">Home</a></li>
+					<li style="list-style-image: url('images/restaurant_resized.png');"><a href="restaurants.html">Restaurants</a></li>
+					<li style="list-style-image: url('images/groceries_resized.png');"><a href="cookingathome.html">Cooking at Home</a></li>
+					<li style="list-style-image: url('images/contact_resized.png');"><a href="contact.html">Contact</a></li>
+					<li id="currentpage" style="list-style-image: url('images/aboutme_resized.png');">About Me</li>
+					<li style="list-style-image: url('images/loremipsum_resized.png');"><a href="lorem_ipsum.html">Lorem Ipsum</a></li>
+					<li style="list-style-image: url('images/gallery.png');"><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+			
+			<div id="pagetitle">
+				<h2>About Me</h2>
+			</div>
+			
+			<div id="aboutme">
+				<figure>
+					<img	src="images/aboutme.png" 
+							alt="aboutme.png"	/>
+				</figure>
+				<p>Who is behind all these articles? Me, Arno Princeston Pan. Yes, it's spelled Prin"ces"ton and not Prineston. 
+				I am a local Vancouverite located in the good old Lower Mainland of British Columbia. I spent the first 6 years in Taiwan. 
+				And immigrated to Canada. I have been here for over 2 decades and don't think I'll be leaving Canada any time soon. I briefly 
+				attended SFU after highschool for a year until I transferred to BCIT's Architectural Building Technology program. I worked for 3 
+				years as an estimator with a few companies before COVID-19 hit and I was laid off. I have been working on redeveloping myself for 
+				a new career. Hopefully in Software Development on the Web. (i.e. Front-End, Back-End). I hope I can continue blogging in my own 
+				platform of choice. And improve my content. Thank you all for checking the website out.</p>
+			</div>
+			
+			<div id="socialmedia">
+				<h3>Social Media</h3>
+				<p>Got one of these?</p>
+				<ul id="socialmediaicons">
+					<li>
+						<a href="https://www.instagram.com/">
+							<img	src="images/insta.png"
+									alt="instagram"	/>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/">
+							<img	src="images/twitter.png"
+									alt="twitter"	/>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/">
+							<img	src="images/facebook.png"
+									alt="facebook"	/>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.snapchat.com/">
+							<img	src="images/snapchat.png"
+									alt="snapchat"	/>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.reddit.com/">
+							<img	src="images/reddit.png"
+									alt="reddit"	/>
+						</a>
+					</li>
+				</ul>			
+			</div>
+			
+			<footer>
+				<h4>Just Eating a Subsidiary of &#172; &#169; DON'T STARVE JUST EAT.</h4>
+				<p>BCIT | COMP 1850 | Arno Princeston Pan</p>
+				<a href="#wrapper">Top of Page</a>
+			</footer>
+		
+		</div>
+	</body>
+</html>

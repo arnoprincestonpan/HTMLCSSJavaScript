@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/*
+author: arno princeston pan
+class : comp 1850
+date  : 10/04/2020
+note  : stylesheet.css for Final Project Proposal 
+*/
+
+/* Main Items */
+
+html
+{
+	box-sizing: border-box;
+	font-family: source code pro, arial; 
+}
+
+body
+{
+	background: #0577B5;
+	margin: 36px;
+}
+
+header
+{
+	flex-direction: column;
+	border: 3px solid black;
+	border-radius: 3px;
+	padding: 10px;
+	background: #F6405F;
+	color: #F3F4E5;
+}
+
+nav
+{
+	margin-top: 1px;
+	border: 3px solid black;
+	border-radius: 3px;
+	background: #F6405F;
+}
+
+ul
+{
+	color: #FCF0EF;
+	flex: 1;
+}
+
+li
+{
+	width: 100%;
+	border: 3px solid grey;
+	border-radius: 3px;
+	text-align: left;
+	background: #3288D4;
+	color: #FCF0EF;
+	width: 42%;
+}
+
+
+.nav-ul
+{
+	margin: 0;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.nav-li
+{
+	list-style: none;
+	box-sizing: border-box;
+	padding: 20px;
+	float: left;
+	height: 60px;
+	width: 50%;
+	margin: 0;
+	text-align: center
+}
+
+
+article
+{
+	display: flex;
+}
+
+section
+{
+	width: 25%;
+	margin-top: 1px;
+	flex-direction: row;
+	border: 3px black solid;
+	border-radius: 3px;
+	background: #F6405F;
+}
+
+.web_section
+{
+	width: 100%;
+}
+
+h1, h2, h3
+{
+	margin: 5px;
+	font-family: lucida console, arial;
+	border: 3px darkgrey solid;
+	border-radius: 3px;
+	padding: 10px;
+	background: #3288D4;
+	color: #E7F5FE;
+}
+
+p
+{
+	margin: 5px;
+	border: 3px grey solid;
+	border-radius: 6px;
+	padding: 10px;
+	background: #3288D4;
+	color: #FCF0EF;
+}
+
+@media screen and (max-width: 500px)
+{
+	
+	.nav-ul
+	{
+		flex-direction: column;
+	}
+	
+	.nav-li
+	{
+		width: 100%;
+	}
+	
+	article
+	{
+		flex-direction: column;
+	}
+	
+	iframe
+	{
+		height: 100%;
+	}
+	
+	section
+	{
+		width: 100%;
+	}
+
+
+}
+
+@media (max-width: 960px)
+{
+	article
+	{
+		flex-direction: column;
+	}
+	
+	iframe
+	{
+		height: 2200px;
+	}
+	
+	section
+	{
+		width: 100%;
+	}
+}
+
+a:link
+{
+	color: oldlace;
+}
+
+a:visited
+{
+	color: firebrick;
+}
+
+a:hover
+{
+	color: gold;
+}
+
+a:active
+{
+	color: maroon;
+}
+
+
+
+
+

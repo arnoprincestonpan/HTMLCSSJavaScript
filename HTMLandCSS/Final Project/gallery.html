@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+name : arno princeston pan
+class: comp 1850 
+date : 10/24/2020
+notes: Final Project - Page - Gallery
+-->
+	<head>
+		<title>Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="wrapper"> <!-- make everything column -->
+		
+			<div id="banner">
+				<h3>"Don't Starve Just Eat"</h3>
+			</div>
+			
+			<header id="header">
+				<h1>Just Eating</h1>
+				<p>Your source to your favorite local restaurants and food sources.</p>
+			</header>
+			
+			<nav id="navwrapper">
+				<ul style="list-style-image: url('images/missing_image_resized.png');">
+					<li style="list-style-image: url('images/home_resized.png');"><a href="index.html">Home</a></li>
+					<li style="list-style-image: url('images/restaurant_resized.png');"><a href="restaurants.html">Restaurants</a></li>
+					<li style="list-style-image: url('images/groceries_resized.png');"><a href="cookingathome.html">Cooking at Home</a></li>
+					<li style="list-style-image: url('images/contact_resized.png');"><a href="contact.html">Contact</a></li>
+					<li style="list-style-image: url('images/aboutme_resized.png');"><a href="aboutme.html">About Me</a></li>
+					<li style="list-style-image: url('images/loremipsum_resized.png');"><a href="lorem_ipsum.html">Lorem Ipsum</a></li>
+					<li id="currentpage" style="list-style-image: url('images/gallery.png');"><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+			
+			<div id="pagetitle">
+				<h2>Gallery</h2>
+			</div>
+			
+			<main id="gallerywrapper">
+			
+				<p>Click on these images. See them... Larger!</p>
+			
+				<div class="row">
+				  <div class="column">
+					<img src="images/bobbaboy.jpg" alt="Bobba Boy" onclick="myFunction(this);">
+				  </div>
+				  <div class="column">
+					<img src="images/bubbletea_nobrand.jpg" alt="No Brand Bubble Tea" onclick="myFunction(this);">
+				  </div>
+				  <div class="column">
+					<img src="images/chunyang.jpg" alt="ChunYang" onclick="myFunction(this);">
+				  </div>
+				  <div class="column">
+					<img src="images/yifang.jpg" alt="YiFang" onclick="myFunction(this);">
+				  </div>
+				</div>
+				
+				<div class="row">
+				  <div class="column">
+					<img src="images/donairdude.jpg" alt="Donair Dude" onclick="myFunction(this);">
+				  </div>
+				  <div class="column">
+					<img src="images/georgespizza.jpg" alt="George's Pizza" onclick="myFunction(this);">
+				  </div>
+				  <div class="column">
+					<img src="images/photannoodles.jpg" alt="Photan Noodles" onclick="myFunction(this);">
+				  </div>
+				  <div class="column">
+					<img src="images/photanseafood.jpg" alt="Photan Seafood" onclick="myFunction(this);">
+				  </div>
+				</div>
+				
+				<div class="container">
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+				  <img id="expandedImg" alt="Expanded Image Goes Here.">
+
+				  <div id="imgtext"></div>
+				</div>
+				
+				<script>
+				function myFunction(imgs) 
+				{
+				  var expandImg = document.getElementById("expandedImg");
+				  var imgText = document.getElementById("imgtext");
+				  expandImg.src = imgs.src;
+				  imgText.innerHTML = imgs.alt;
+				  expandImg.parentElement.style.display = "block";
+				}
+				</script>
+			
+			</main>
+			
+			<footer>
+				<h4>Just Eating a Subsidiary of &#172; &#169; DON'T STARVE JUST EAT.</h4>
+				<p>BCIT | COMP 1850 | Arno Princeston Pan</p>
+				<a href="#wrapper">Top of Page</a>
+			</footer>
+		
+		</div>
+	</body>
+</html>

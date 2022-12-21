@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+name : arno princeston pan
+class: comp 1850 
+date : 10/21/2020
+notes: Final Project - Page - Contact
+-->
+	<head>
+		<title>Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="wrapper"> <!-- make everything column -->
+		
+			<div id="banner">
+				<h3>"Don't Starve Just Eat"</h3>
+			</div>
+			
+			<header id="header">
+				<h1>Just Eating</h1>
+				<p>Your source to your favorite local restaurants and food sources.</p>
+			</header>
+			
+			<nav id="navwrapper">
+				<ul style="list-style-image: url('images/missing_image_resized.png');">
+					<li style="list-style-image: url('images/home_resized.png');"><a href="index.html">Home</a></li>
+					<li style="list-style-image: url('images/restaurant_resized.png');"><a href="restaurants.html">Restaurants</a></li>
+					<li style="list-style-image: url('images/groceries_resized.png');"><a href="cookingathome.html">Cooking At Home</a></li>
+					<li id="currentpage" style="list-style-image: url('images/contact_resized.png');">Contact</li>
+					<li style="list-style-image: url('images/aboutme_resized.png');"><a href="aboutme.html">About Me</a></li>
+					<li style="list-style-image: url('images/loremipsum_resized.png');"><a href="lorem_ipsum.html">Lorem Ipsum</a></li>
+					<li style="list-style-image: url('images/gallery.png');"><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+			
+			<div id="pagetitle">
+				<h2>Contact</h2>
+			</div>
+			
+			<div id="contactwrapper">
+			
+				<div>
+					<h3>Interested in Contacting me?</h3>
+					<p>Feel free to fill up the form below to contact me.</p>
+				</div>
+				
+				<form	action="www.dontstarvejusteat.ca/imaginative_form_submission.php"
+						method="post"
+						class="placeholders">
+					
+					<!--
+					Reminder of how things work for html forms
+					type: will determine what type of form you want to usemap
+					name: what the HTTP receives and your browser sends (the input data)
+					id  : what javascript, html and css sees to identify an element
+					placeholder: for type="text" it's the grey placeholder for the text prompted
+					value: is the pre-determined "choice" you have made for the input that would go into name
+					-->
+					
+					<section id="namewrapper">
+					
+						<h2>Name</h2>
+					
+						<input	type="text"
+								name="firstname"
+								id="firstname"
+								placeholder="your first name"	/>
+						
+						<input	type="text"
+								name="lastname"
+								id="lastname"
+								placeholder="your last name"	/>
+								
+						<input	type="email"
+								name="email"
+								id="email"
+								placeholder="your e-mail address"	/>
+							
+					</section>
+					
+					<section id="courseswrapper">
+					
+						<h2>Mail-List</h2>
+						
+						<fieldset>
+							<legend>Do you agree to join the <i>JUST EATING</i> mail-list?</legend>
+							
+							<div>
+								<input	type="checkbox"
+										name="maillist"
+										id="accept"
+										checked="checked"
+										value="accept"	/>
+								<label for="accept">Accept</label>
+							</div>
+							
+									
+						</fieldset>
+					</section>
+					
+					<section id="commentswrapper">
+						<h2>Comment</h2>
+							<div>
+								<p>Tell us why you like us? Or not. More to say? Please sign-up and e-mail me.</p>
+								<textarea	name="comments"
+											placeholder="leave your comments here"
+											id="comments"></textarea>
+							</div>
+					</section>
+					
+					<section id="submitwrapper">
+						<h2>Ready? Click Submit!</h2>
+						<div>
+							<input type="submit" name="submit"	/>
+						</div>
+						
+					</section>
+					
+				</form>
+			
+			</div>
+
+			
+			<footer>
+				<h4>Just Eating a Subsidiary of &#172; &#169; DON'T STARVE JUST EAT.</h4>
+				<p>BCIT | COMP 1850 | Arno Princeston Pan</p>
+				<a href="#wrapper">Top of Page</a>
+			</footer>
+		</div>
+	</body>
+</html>
