@@ -1,0 +1,156 @@
+/* CSS Stylesheet */
+
+/*
+@author     : Arno Princeton Pan
+@class      : COMP 1850 | Fall 2020
+@assignment : #Assignment #4
+@notes      : CSS 
+*/
+
+*
+{
+	box-sizing: border-box;
+}
+
+html
+{
+	font-family: courier, candara, arial;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+}
+
+section
+{
+	border: 5px solid steelblue;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	overflow: hidden;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+.header_h1
+{
+	display: block;
+	float: left;
+	padding: 20px;
+	background-color: powderblue;
+	color: beige;
+	text-shadow: 2px 2px 4px #000000;
+	border: 10px steelblue solid;
+	border-radius: 10px;
+}
+
+.box_image
+{
+	float: left;
+	width: 400px;
+	height: 300px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px 2px grey;
+	
+	background: blue;
+	background-image: url(../images/source_adjusted.jpg);
+	background-size: cover;
+	opacity: 0.8;
+	
+	margin-right: 10px;
+}
+
+.box_image:hover
+{
+	opacity: 1.0;
+	border: 5px solid steelblue;
+}
+
+.body_image
+{
+	background: blue;
+	background-image: url(../images/background_okinawa.jpg);
+	background-size: cover;
+}
+
+.nav_ul
+{
+	display: flex;
+	flex-direction: row;
+	float: left;
+	list-style-type: none;
+	width: 100%;
+	padding: 5px;
+	border: 5px steelblue solid;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav_li
+{
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 10px;
+	border: 10px steelblue solid;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: powderblue;
+	margin: 3px;
+	text-shadow: none;
+}
+
+#nav_selected
+{
+	mix-blend-mode: exclusion;
+}
+
+.footer_ul
+{
+	border: 5px solid steelblue;
+	border-radius: 5px;
+	width: 100%;
+	list-style-type: none;
+	background-color: powderblue;
+}
+
+.footer_li
+{
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+.button_first:hover
+{
+	filter: grayscale(100%);
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+a:visited
+{
+	text-decoration: line-through;
+}
+
+a:hover
+{
+	text-decoration: underline overline;
+	background-color: lightyellow;
+}
+
+a:active
+{
+	text-decoration: underline;
+	background-color: orange;
+	color: green;
+}
