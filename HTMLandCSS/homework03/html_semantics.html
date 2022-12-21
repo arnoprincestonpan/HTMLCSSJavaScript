@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+author : arno princeston pan
+class  : comp 1850
+date   : 09/21/2020
+notes  : the second page to assignment #3 specifically for semantics (3 qty) that were not discussed in-class
+-->
+	<head>
+		<title>HTML Semantics Research</title>
+		<meta charset="utf-8" />
+		<link href="css/stylesheet.css" rel="stylesheet" />
+		<style>
+			h2{
+				font-family: georgia, sans serif;
+			}
+			
+			p{
+				font-family: book antiqua, sans serif;
+			}
+			
+			#details{
+				background-color: #FF9B71; 
+			}
+			
+			#mark{
+				background-color: #FFFD82; 
+			}
+			
+			#time{
+				background-color: #F7EF99; 
+			}
+			
+			.explain{
+				color: #4F6D7A;
+				background-color: #EAEAEA;
+			}
+			
+			img{
+				border: 1px solid black;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+				<img src="images/toilet_cat_laptop.png" alt="Main Header Image" width="150" height="150"/>
+		</header>
+		
+		<div style="background-color: #DB4F43">
+			<h1>HTML Semantics Research</h1>
+			<p style="background-color: #DB4F43">Here are 3 types of HTML Semantics that I have found on the Internet. I'll be introducing them below.</p>
+		</div>
+		
+		<nav>
+			<h3 id="sitemap">Navigation Pane</h3>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>HTML Semantics</li>
+				<li><a href="css_selectors.html">CSS Selectors</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<h2 id="details">&lt;details> and &lt;summary></h2>
+			<p class="explain">The details tag is meant to be an optional drop down menu if more information is needed. And not to clutter the page with text. 
+			The user can click to expand it to show the information provided. Whereas the summary tag is used to summarize the information within the drop down text. 
+			For more information visit <a href="https://www.w3schools.com/">W3 Schools</a>: <a href="https://www.w3schools.com/tags/tag_details.asp">&lt;details></a> and 
+			<a href="https://www.w3schools.com/tags/tag_summary.asp">&lt;summary></a>.</p>
+			<details>
+				<summary>Waldo</summary>
+				<p>You found me!</p>
+			</details>
+			
+			<h2 id="mark">&lt;mark></h2>
+			<p class="explain">The mark tag is a tag that works similar to the span tag. However; it is more simple. As it highlights the text 
+			enclosed inside the tags without having to define what is needed. So it simply works like a yellow highlighter. For more information visit 
+			<a href="https://www.w3schools.com/">W3 Schools</a> for the <a href="https://www.w3schools.com/TAgs/tag_mark.asp">&lt;mark></a> tag.</p>
+			<p>Example: I am not marked. <mark>I am marked!</mark></p>
+			
+			<h2 id="time">&lt;time> and attribute datetime</h2>
+			<p class="explain">The time tag is to define a specific time. The important part is the attribute, this will define what a specific time means to the browser. 
+			News articles can have time stamps, in search engines like Google, you can search specifically for which date a page/article was published. One of the best ways is 
+			to define a time. I made this around <time>09:00</time> to <time>12:00</time>. Which is a <time datetime="2020-09-22 10:30">Tuesday</time>. Your calendars on your 
+			device also look for this date time. You can find out more about this attribute on <a href="https://www.w3schools.com/">W3 Schools</a>: <a href="https://www.w3schools.com/tags/tag_time.asp"> &lt;time></a>.
+			</p>	
+		</main>
+		
+		<footer>
+			<p style="background-color: #D83F31"><a href="#sitemap">Sitemap</a> | 
+			Follow Me(Arno Princeston Pan) On: <a href="https://twitter.com/ArnoPrincestonP">Twitter</a> | 
+			BCIT | COMP 1850 | FALL 2020</p>
+		</footer>
+	</body>
+
+</html>

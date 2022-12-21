@@ -1,0 +1,66 @@
+/*
+	name  : arno princeston pan
+	course: comp 1850
+	work  : assignment #3
+	date  : 09/22/20
+	note  : this is my first CSS stylesheet of my life! (Don't forget this is .css and not .html)
+*/
+
+
+body{
+	background-color: #E26F65;
+	font-family:arial, sans serif;
+}
+
+h1{
+	font-family:alef, sans serif;
+}
+
+h2{
+	background-color: #FFAC81;
+	border: 1px solid;
+}
+
+header{
+	border: 3px solid;
+	background-color: #D83F31;
+}
+
+p{
+	border: 1px solid;
+	background-color: #F6DFB6;
+}
+
+section{
+	border: 1px solid;
+	background-color: #F0C987;
+}
+
+nav{
+	border: 1px solid;
+	background-color: #D83F31;
+}
+
+footer{
+	font-family:arial, sans serif;
+}
+
+
+
+/*pseudoclasses*/
+
+a:link{
+	color: navy;
+}
+
+a:visited{
+	color: darkgrey;
+}
+
+a:hover{
+	color: yellow;
+}
+
+a:active{
+	color: green;
+}

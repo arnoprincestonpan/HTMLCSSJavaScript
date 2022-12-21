@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+author : arno Princeston Pan
+class  : comp 1850
+date   : 09/21/2020
+notes  : the css selectors page, where you describe the css properties you learned
+-->
+	<head>
+		<title>CSS Properties Research</title>
+		<meta charset="utf-8" />
+		<link href="css/stylesheet.css" rel="stylesheet" />
+		<style>
+			h2{
+				background-color: #FD4521;
+				font-family: verdana, sans serif;
+			}
+			
+			p{
+				font-family: gothic, sans serif;
+			}
+			
+			section{
+				background-color: #DD2C2C;
+			}
+			
+			#outline{
+				text-transform: uppercase;
+				text-align: center;
+				font-family: comic sans MS, san serif;
+				border: 5px solid black;
+				outline: 10px dotted yellow;
+			}
+			
+			img{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="images/toilet_cat_laptop.png" alt="Main Header Image" width="150" height="150">
+		</header>
+		
+		<div style="background-color: #DB4F43">
+			<h1>CSS Properties Research</h1>
+			<p style="background-color: #DB4F43">Here are 3 types of CSS Properties that I have found on the Internet. I'll be introducing them below.</p>
+		</div>
+
+		<nav>
+			<h3 id="sitemap">Navigation Pane</h3>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="html_semantics.html">HTML Semantics</a></li>
+				<li>CSS Selectors</li>
+			</ul>
+		</nav>
+		
+		<main>
+			<section>
+				<h2><a href="https://www.w3schools.com/css/css_text_align.asp">text-align</a></h2>
+					<p>text-align can change where your paragraph/line starts.</p>
+					<ul>
+						<li style="text-align: center">You can now move your text on-centre!</li>
+					</ul>
+					
+				<h2><a href="https://css-tricks.com/almanac/properties/t/text-transform/#:~:text=Take%20a%20look%20at%20the%20HTML%20tab%20to,quotes%2C%20and%20the%20first%20letter%20after%20a%20hyphen.">text-transform</a></h2>
+					<p>text-transform can change your cases of your text.</p>
+					<ul>
+						<li style="text-transform: uppercase; text-align: center">when you're just trying to be calm but you have had too much coffee!!!</li>
+						<li style="text-transform: lowercase; text-align: center">WHEN YOU HAVE A QUESTION BUT CAN'T SEEM TO VOICE YOUR WORDS OUT.</li>
+						<li style="text-transform: capitalize; text-align: center">always write your names with the capital for the first letters.</li>
+					</ul>
+					
+				<h2><a href="https://www.w3schools.com/cssref/pr_outline.asp">outline</a></h2>
+					<p>outline can outline your text and make it stand out. Instead of highlighting/striking text.</p>
+					<p id="outline">This looks like a theatre sign doesn't it?</p>
+			</section>
+		</main>
+		
+		<footer>
+			<p style="background-color: #D83F31"><a href="#sitemap">Sitemap</a> | 
+			Follow Me(Arno Princeston Pan) On: <a href="https://twitter.com/ArnoPrincestonP">Twitter</a> | 
+			BCIT | COMP 1850 | FALL 2020</p>
+		</footer>
+	</body>
+
+</html>
