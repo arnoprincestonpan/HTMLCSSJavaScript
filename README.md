@@ -17,8 +17,7 @@
 ### homework 6
     A simple none-working form.
 
-##JavaScript
-------------
+## JavaScript
 
 ### Assignment 0
     A quick review of HTML and CSS. Simple introduction of me.
