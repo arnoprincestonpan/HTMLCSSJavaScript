@@ -1,0 +1,205 @@
+@charset "utf-8";
+/*
+name : arno princeston pan
+class: comp 2132
+date : 10/27/2021
+notes: assignment 03
+*/
+
+html
+{
+	color: #fffbeb;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box; 
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+body
+{
+	background: #CDE8F4;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 15px;
+}
+
+p
+{
+	font-size: larger;
+}
+
+header
+{
+	display: flex;
+	flex-direction: column; /* makes the "slogan" in column */
+	flex-wrap: wrap;
+
+	font-family: 'Lora', sans-serif;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+main > ul > li
+{
+	font-weight: bold;
+}
+
+
+/* Containers */
+
+.foundLine
+{
+	background-color: darkgreen;
+	padding: 10px; 
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.flexbox-container-overall
+{
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100%;
+}
+
+.flexbox-container-header
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #227396;
+
+	max-width: 100%;
+
+	text-shadow: 2px 4px 4px #330C2F;
+
+	border: 3px solid black;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px black;
+}
+
+.flexbox-container-main
+{
+	margin-top: 3px;
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100%;
+
+	border: 3px solid black;
+	border-radius: 3px;
+
+	background-color: #2D99C8;
+
+	
+}
+
+.flexbox-container-main-sub
+{
+	display: flex;
+	margin-top: 1px;
+	flex-direction: column;
+
+	max-width: 100%;
+
+	border: 1px solid black; 
+	border-radius: 3px;
+
+	background-color: lightblue;
+}
+
+.flexbox-container-article
+{
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 5px;
+
+	border: 3px solid black;
+	border-radius: 3px;
+
+	background-color: #329F5B;
+
+}
+
+.flexbox-container-footer
+{
+	margin-top: 3px;
+
+	border-radius: 5px;
+	border: 3px solid black;
+	box-shadow: 3px 3px 3px black;
+
+	display: flex;
+	background: #227396;
+}
+
+
+/* Link PseudoClasses */
+
+a:link
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-transform: uppercase;
+	color: purple;
+	background: lightblue;
+}
+
+a:visited
+{
+	color: maroon;
+}
+
+a:active
+{
+	color: red;
+	background-color: orange;
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	
+	margin-top: -5px;
+
+	font-weight: bolder;
+}
+
+/* Other screen sizes */
+
+@media screen and (max-width: 320px)
+{
+
+}
+
+@media screen and (max-width: 411px)
+{
+
+}
+
+@media screen and (max-width: 1300px)
+{
+
+}

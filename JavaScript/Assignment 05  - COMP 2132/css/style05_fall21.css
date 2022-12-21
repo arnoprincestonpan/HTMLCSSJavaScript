@@ -1,0 +1,419 @@
+@charset "utf-8";
+/*
+name : arno princeston pan
+class: comp 2132
+date : 11/07/2021
+notes: assignment 05
+*/
+
+html
+{
+	color: #F58025; /* font colour*/
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box; 
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+body
+{
+	background: grey;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 15px;
+}
+
+p
+{
+	font-size: larger;
+}
+
+header
+{
+	display: flex;
+	flex-direction: column; /* makes the "slogan" in column */
+	flex-wrap: wrap;
+
+	font-family: 'Lora', sans-serif;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+main > ul > li
+{
+	font-weight: bold;
+}
+
+
+/* Containers */
+
+.foundLine
+{
+	background-color: darkgreen;
+	padding: 10px; 
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.flexbox-container-overall
+{
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100%;
+}
+
+.flexbox-container-header
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #0F4D92;
+
+	max-width: 100%;
+
+	text-shadow: 2px 4px 4px black;
+
+	border: 3px solid #412300;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px #180D00;
+}
+
+.flexbox-container-footer
+{
+	margin-top: 3px;
+	color: #8D3312;
+	border-radius: 5px;
+	border: 3px solid #412300;
+	text-shadow: 2px 4px 4px #33110E;
+	box-shadow: 3px 3px 3px #180D00;
+
+	display: flex;
+	background-color: #0F4D92;
+}
+
+/* Main */
+
+.mainContainer
+{
+	display: flex;
+
+	max-width: 100%;
+
+	border: 3px solid #412300;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px #180D00;
+
+	background-color: #0F4D92;
+	text-shadow: 2px 4px 4px black;
+
+	margin-top: 3px;
+}
+
+
+/* Submission Form */
+
+.formContainer
+{
+	display: flex;
+	flex-direction: column;
+
+	color: #505050;
+	text-shadow: 2px 4px 4px #303030;
+	background-color: blanchedalmond;
+
+	border: 3px groove black;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #33110E;
+
+	margin: 20px;
+	padding: 5px;
+
+	width: 500px;
+}
+
+.rowContainer
+{
+	display: flex;
+	margin: 10px;
+
+	max-width: 100%;
+}
+
+.label
+{
+	line-height: 30px;
+	width: 110px;
+
+	max-width: 100%;
+}
+
+.inputBox
+{
+	/* border: 1px solid black; */
+	margin-left: 5px;
+	width: 500px;
+
+	max-width: 100%;
+}
+
+.input
+{
+	border: 2px solid #242526;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #AAAAAA;
+
+	width: 300px;
+}
+
+.studentIDInput
+{
+	border: 2px solid #242526;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #AAAAAA;
+
+	width: 275px;
+}
+
+.studentIDButton
+{
+	border: 2px solid #242526;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #AAAAAA;
+
+	background-color: #F58025;
+}
+
+.passwordInput
+{
+	border: 2px solid #242526;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #AAAAAA;
+
+	width: 190px;
+
+}
+
+.passwordButton
+{
+	border: 2px solid #242526;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #AAAAAA;
+}
+
+.select
+{
+	border: 2px solid #242526;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #AAAAAA;
+
+	width: 300px;
+
+	background-color: #F58025;
+}
+
+.submitContainer
+{
+	display: flex;
+	justify-content: right;
+	margin: 10px;
+
+	width: 388px;
+	max-width: 100%;
+}
+
+.submitButton
+{
+	height: 50px;
+	width: 100px;
+
+	border: 2px solid #242526;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #AAAAAA;
+
+	background-color: #F58025;
+}
+
+
+/* Tool Tip */
+
+.popUp
+{
+	visibility: hidden;
+
+	position: absolute;
+	top: 289px;
+	left: 415px;
+
+	border: 3px solid black;
+	border-radius: 5px;
+
+	background-color: blanchedalmond;
+
+	width: 200px;
+	height: 200px;
+
+}
+
+/* Warning */
+
+.warningBox
+{
+	/* WARNING DEFAULT HIDDEN */
+	visibility: hidden;
+
+	max-width: 30%;
+
+	border: 3px groove #9600CD;
+	border-radius: 5px;
+
+	margin: 20px;
+	padding: 10px;
+
+	background-color: #7027C3;
+}
+
+
+/* Link PseudoClasses */
+
+a:link
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-transform: uppercase;
+	color: purple;
+	background: lightblue;
+}
+
+a:visited
+{
+	color: maroon;
+}
+
+a:active
+{
+	color: red;
+	background-color: orange;
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	
+	margin-top: -5px;
+
+	font-weight: bolder;
+}
+
+/* Other screen sizes */
+
+@media screen and (max-width: 450px)
+{
+/* Make sure the submission box doesn't go over the phone*/
+
+	.formContainer
+	{
+		margin: 5px;
+		padding: 0px;
+
+		border-radius: 5px;
+
+		width: 330px;
+	}
+
+	.label
+	{
+		font-size: 93%;
+	}
+
+	.inputBox
+	{
+		display: flex;
+		flex-direction: column;
+
+		width: 300px;
+
+		margin-left: 20px;
+		justify-content: flex-start;
+	}
+
+	.input
+	{
+		width: 200px;
+	}
+
+	.studentIDInput
+	{
+		width: 200px;
+	}
+
+	.studentIDButton
+	{
+		width: 200px;
+	}
+
+	.passwordInput
+	{
+		width: 200px;
+	}
+
+	.passwordButton
+	{
+		width: 200px;
+	}
+
+	.select
+	{
+		width: 200px;
+	}
+
+	.submitContainer
+	{
+		display: flex;
+		justify-content: right;
+		margin: 10px;
+
+		width: 300px;
+		max-width: 100%;
+	}
+
+	.warningBox
+	{
+		max-width: 100%;
+	}
+
+	.popUp
+	{
+		top: 415px;
+		left: 125px;
+	}
+}
+
+
+@media screen and (max-width: 1300px)
+{
+	.warningBox
+	{
+		max-width: 60%;
+	}
+}

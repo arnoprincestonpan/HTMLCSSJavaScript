@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- 
+name:   arno princeston pan
+id:     a00823325
+class:  comp 2132 web dev w/ javascript
+note:   assignment #5 - .js event handling and forms
+-->
+<html lang = 'en'>
+    <head>
+        <meta charset = 'utf-8'  />
+        <meta name = 'viewport' content = 'width=device-width, initial-scale = 1.0'  />
+        <link rel = 'stylesheet' href = 'css/style05_fall21.css'    />
+
+        <title>Assignment #4 - Javascript Objects</title>
+    </head>
+    <body>
+        <div class = 'flexbox-container-overall'>
+
+            <div id = 'top' class = 'flexbox-container-header'>
+                <header>
+                    <h1>Assignment #5 - Javascript Forms</h1>
+                    <p>Demonstrate Javascript Event Handling and Form Processing</p>
+                </header>
+            </div>
+
+            <div>
+                <main class = 'mainContainer'>
+
+                    <h2>BCIT Log-In</h2>
+
+                    <p>Please fill out the form below. All fields are required.<br>Hover over the '?' in the form to show the 
+                     student ID tip. <br>Use 'Show Password' to see your typed password. <br>And 'Hide Password' to hide it again.
+                     <br>Don't forget to click submit button when you're done filling the form.
+                    </p>
+
+                    <form class = 'formContainer' id = 'formContainer' name = 'loginForm' action = 'thank-you.html'>
+
+                        <div class = 'rowContainer' style = 'padding-top: 10px;'>
+                            <label class = 'label' for = 'firstName' id = 'firstNameLabel'>First Name: </label>
+                            <div class = 'inputBox'>
+                                <input class ='input' type = 'text' name = 'firstName' id = 'firstNameInput' placeholder = 'First Name'>
+                            </div>
+                        </div>
+
+                        <div class = 'rowContainer'>
+                            <label class = 'label' for = 'lastName' id = 'lastNameLabel'>Last Name: </label>
+                            <div class = 'inputBox'>
+                                <input class = 'input' type = 'text' name = 'lastName' id = 'lastNameInput' placeholder = 'Last Name'>
+                            </div>
+                        </div>
+
+                        <div class = 'rowContainer'>
+                            <label class = 'label' for = 'studentID'>Student ID: </label>
+                            <div class = 'inputBox'>
+                                <input class = 'studentIDInput' type = 'text' name = 'studentID' id = 'studentID' placeholder = 'Student ID'>
+
+                                <button class = 'studentIDButton' type = 'button' id = 'IDHelp'>?</button>
+                            </div>
+                        </div>
+
+                        <div class = 'rowContainer'>
+                            <label class = 'label' for = 'password'>Password: </label>
+                            <div class = 'inputBox'>
+                                <input class = 'passwordInput' type = 'password' name = 'password' id = 'passwordInput' placeholder = 'Password'>
+
+                                <button class = 'passwordButton' type = 'button' id = 'passwordButton'>Show Password</button>
+                            </div>
+                        </div>
+
+                        <div class = 'rowContainer'>
+                            <label class = 'label' for = 'courses'>Courses: </label>
+                            <div class = 'inputBox'>
+                                <select class = 'select' name = 'courses' id = 'courses'>
+                                    <option selected = 'selected' disabled = 'true'>Choose your course:</option>
+                                    <option>COMP1850</option>
+                                    <option>COMP2132</option>
+                                    <option>COMP2913</option>
+                                    <option>COMP3012</option>
+                                    <option>COMP3015</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class = 'submitContainer'>
+                            <button class = 'submitButton' type = 'submit' id = 'submitButton'>Submit</button>
+                        </div>
+
+                    </form>
+
+                    <div class = 'warningBox' id = 'warningBox'>
+                        <!-- Content Here -->
+                    </div>
+
+                </main>
+            </div>
+
+        </div>
+
+        <div>
+            <footer class = "flexbox-container-footer">
+                <h3>BCIT Part-Time Studies | Fall 2021 | COMP 2132 | Arno Princeston Pan | A00823325 </h3>
+                <h4><a href = "#top">TOP OF PAGE</a></h4>
+            </footer>
+        </div>
+
+        <section class = 'popUp' id = 'popUp'>
+            <h4>Valid Student ID</h4>
+            <p>Make sure your student number starts with "a", followed by 8 numbers. (i.e. a00999999)</p>
+        </section>
+
+
+        <script src = 'scripts/assignment05.js'></script>
+    </body>
+</html>

@@ -1,0 +1,254 @@
+@charset "utf-8";
+/*
+name : arno princeston pan
+class: comp 2132
+date : 11/11/2021
+update: 
+notes: assignment 06 - intro to jquery
+*/
+
+html
+{
+	color: #373737; /* font colour*/
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box; 
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+body
+{
+	background: #C1DBE3;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 15px;
+}
+
+p
+{
+	font-size: larger;
+}
+
+header
+{
+	display: flex;
+	flex-direction: column; /* makes the "slogan" in column */
+	flex-wrap: wrap;
+
+	font-family: 'Lora', sans-serif;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+main > ul > li
+{
+	font-weight: bold;
+}
+
+
+/* Containers */
+
+.flexbox-container-overall
+{
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100%;
+}
+
+.flexbox-container-header
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #FCE694;
+
+	max-width: 100%;
+
+	text-shadow: 2px 4px 4px grey;
+
+	border: 3px solid #33110E;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px #33110E;
+}
+
+.flexbox-container-main
+{
+	margin-top: 3px;
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100%;
+
+	border: 3px solid #33110E;
+	border-radius: 3px;
+
+	background-color: #F6FEAA;
+
+	
+}
+
+.contentContainer{
+	border: 3px solid black;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.imageContainer{
+	/* border: 3px solid blue; */
+}
+
+.largeImageContainer{
+	border: 3px solid #FFD700;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 3px;
+}
+
+.largeImage{
+	height: 424px;
+	width: 323px;
+	border:1px solid #C1DBE3;
+}
+
+.smallImageContainer{
+	border: 3px solid #FFD700;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 3px;
+}
+
+.smallImage{
+	height: 141px;
+	width: 107px;
+	border:1px solid #C1DBE3;
+}
+
+.textContainer{
+	/* border: 3px solid blue; */
+}
+
+.textBox{
+	border: 3px solid #FFD700;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px;
+	min-width: 250px;
+}
+
+.priceBox{
+	display: flex;
+	flex-direction: row;
+}
+
+.quantityButtons{
+	align-self: flex-end;
+	min-width: 50px;
+	min-height: 50px;
+}
+
+.formBox{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.infoBox{
+	display: flex;
+	flex-direction: row;
+}
+
+.choiceBox{
+	display: flex;
+	margin-left: 10px;
+}
+
+#submitButton{
+	padding: 10px;
+	min-width: 250px;
+	max-height: 50px;
+}
+
+.flexbox-container-footer
+{
+	margin-top: 3px;
+	border-radius: 5px;
+	border: 3px solid #33110E;
+	text-shadow: 2px 4px 4px grey;
+	box-shadow: 3px 3px 3px #33110E;
+
+	display: flex;
+	background: #FCE694;
+}
+
+
+/* Link PseudoClasses */
+
+a:link
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-transform: uppercase;
+	color: purple;
+	background: lightblue;
+}
+
+a:visited
+{
+	color: maroon;
+}
+
+a:active
+{
+	color: red;
+	background-color: orange;
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	
+	margin-top: -5px;
+
+	font-weight: bolder;
+}
+
+/* Other screen sizes */
+
+@media screen and (max-width: 320px)
+{
+
+}
+
+@media screen and (max-width: 415px)
+{
+	.contentContainer{
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1300px)
+{
+
+}

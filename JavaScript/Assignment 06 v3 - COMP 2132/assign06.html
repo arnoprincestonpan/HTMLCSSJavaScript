@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- 
+name:   arno princeston pan
+id:     a00823325
+class:  comp 2132 web dev w/ javascript
+note:   assignment #6 - intro to jquery
+-->
+
+<html lang = 'en'>
+    <head>
+        <meta charset = 'utf-8'  />
+        <meta name = 'viewport' content = 'width=device-width, initial-scale = 1.0'  />
+        <link rel = 'stylesheet' href = 'css/style06_fall21.css'    />
+
+        <title>Assignment #4 - Javascript Objects</title>
+    </head>
+    <body>
+        <div class = 'flexbox-container-overall'>
+            <div id = 'top' class = 'flexbox-container-header'>
+                <header>
+                    <h1>Assignment #6 - Intro to jQuery</h1>
+                    <p>Use jQuery to Build an Interactive e-Commerce Product Page</p>
+                </header>
+            </div>
+
+            <div>
+                <main class = 'flexbox-container-main'>
+                
+                <h2>Product: Cotton T-Shirt</h2>
+
+<!-- 
+Two Main Boxes, Left for Image Box, Right for Text Box
+    Image Box has Two Boxes, Top Box for Large Image, Bottom for Small Images
+        Top Box for Large Image
+            Large Photo
+        Bottom for Small Images
+            First Small Photo
+            Second Small Photo
+            Third Small Photo
+    Text Box has 4 Boxes: Cost Box, Color Box, Size Box and Button Box
+        Cost Box
+            Cost of Item
+        Color Box
+            Color of Item: [text that changes]
+            Color Selection 1
+            Color Selection 2
+            Color Selection 3
+        Size Box
+            Size of Item: [text that changes]
+            Size Selection 1
+            Size Selection 2
+            Size Selection 3
+        Button Box
+            Add Button: [Add to quantity, when selection complete/Choose A Size, event.preventdefault()]
+-->
+                <div class = 'contentContainer' id = 'contentContainer'>
+                    <div class = 'imageContainer' id = 'imageContainer'>
+                        <div class = largeImageContainer id = 'largeImageContainer'>
+                            <img class = 'largeImage' src = 'images/t-shirt-black-no-model.jpg' alt = 'clothing' id = 'displayImage'    />
+                        </div>
+                        <div class = 'smallImageContainer' id ='smallImageContainer'>
+                            <img class = 'smallImage' src = 'images/t-shirt-black-no-model.jpg' alt = 'clothing' id = 'srcNoModel'/>
+                            <img class = 'smallImage' src = 'images/t-shirt-black-front.jpg' alt = 'clothing' id = 'srcFront'/>
+                            <img class = 'smallImage' src = 'images/t-shirt-black-back.jpg' alt = 'clothing' id = 'srcBack'/>
+                        </div>
+                    </div>
+                    <div class = 'textContainer' id = 'textContainer'>
+                        <div class = 'textBoxes'>
+                            <div class = 'textBox'>
+                                <div class = 'priceBox'>
+                                    <p>Price: </p>
+                                    <p id = 'priceHere'>price here</p>
+                                    <button type = 'button' class = 'quantityButtons'>-</button>
+                                    <button type = 'button' class = 'quantityButtons'>+</button>
+                                </div>
+                                <div>
+                                    <p>Quantity: </p>
+                                    <p id = 'quantityHere'># of Item(s)</p>
+                                </div>
+                            </div>
+                            <div class = 'textBox'>
+                                <form class = 'formBox' id = 'formColor'>
+                                    <div class = 'infoBox'>
+                                        <h3>Color: </h3>
+                                        <p id = 'changingColor'>Choose</p>
+                                    </div>
+                                    <div class = 'choiceBox'>
+                                        <input class = 'colorSelection' type = 'radio' id = 'black' name = 'itemColor' value = 'Black'  />
+                                        <label for = 'black'>Black</label>
+                                    </div>
+                                    <div class = 'choiceBox'>
+                                        <input class = 'colorSelection' type = 'radio' id = 'red' name = 'itemColor' value = 'Red'   />
+                                        <label for = 'red'>Red</label>
+                                    </div>
+                                    <div class = 'choiceBox'>
+                                        <input class = 'colorSelection' type = 'radio' id = 'grey' name = 'itemColor' value = 'Grey'   />
+                                        <label for = 'grey'>Grey</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class = 'textBox'>
+                                <form action = 'thank-you.html' class = 'formBox' id = 'formSize'>
+                                    <div class = 'infoBox'>
+                                        <h3>Size: </h3>
+                                        <p id = 'changingSize'>Choose</p>
+                                    </div>
+                                    <div class = 'choiceBox'>
+                                        <input class = 'sizeSelection' type = 'radio' id = 'small' name = 'itemSize' value = 'Small S'  />
+                                        <label for = 'small'>Small S</label>
+                                    </div>
+                                    <div class = 'choiceBox'>
+                                        <input class = 'sizeSelection' type = 'radio' id = 'medium' name = 'itemSize' value = 'Medium M'   />
+                                        <label for = 'medium'>Medium M</label>
+                                    </div>
+                                    <div class = 'choiceBox'>
+                                        <input class = 'sizeSelection' type = 'radio' id = 'large' name = 'itemSize' value = 'Large L'   />
+                                        <label for = 'large'>Large L</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class = 'textBox'>
+                                <button type = 'submit' id = 'submitButton' form = 'formSize'>Text of Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </main>
+            </div>
+        </div>
+
+        <div>
+            <footer class = "flexbox-container-footer">
+                <h3>BCIT Part-Time Studies | Fall 2021 | COMP 2132 | Arno Princeston Pan | A00823325 </h3>
+                <h4><a href = "#top">TOP OF PAGE</a></h4>
+            </footer>
+        </div>
+
+        <script src = 'https://code.jquery.com/jquery-3.6.0.min.js'></script>
+        <script src = 'scripts/assignment06.js'></script>
+    </body>
+</html>
