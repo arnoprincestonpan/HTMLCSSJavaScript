@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 
+name:   arno princeston pan
+id:     a00823325
+class:  comp 2132 web dev w/ javascript
+note:   assignment #7 - setTimeout() & requestAnimationFrame()
+update: v3
+-->
+
+<html lang = 'en'>
+    <head>
+        <meta charset = 'utf-8'  />
+        <meta name = 'viewport' content = 'width=device-width, initial-scale = 1.0'  />
+        <link rel = 'stylesheet' href = 'css/style07_fall21.css'    />
+
+        <title>Assignment #7 - Animations</title>
+    </head>
+    <body>
+        <div class = 'flexbox-container-overall'>
+            <div id = 'top' class = 'flexbox-container-header'>
+                <header>
+                    <h1>Assignment #7 - setTimeout() & requestAnimationFrame()</h1>
+                    <p>Objective: Use setTimeOut() and RequestionAnimationFrame() to apply various animations to an HTML document</p>
+                </header>
+            </div>
+
+            <div class = 'flexbox-container-main'>
+                <main>
+                
+                <h2>Bicycle Product: LTD Race</h2>
+
+                <div class = 'content-Container'>
+                    <img id = 'bicycleDisplay' src = 'images/bike-1-html.jpg' alt = 'images/bike-#.jpg' width = '480' height = '327'/>
+                    <div class = 'button-Container'>
+                        <button class = 'movementButtons' id = 'startButton'>Start</button>
+                        <button class = 'movementButtons' id = 'stopButton'>Stop</button>
+                    </div>
+                </div>
+
+                </main>
+            </div>
+        </div>
+
+        <div>
+            <footer class = "flexbox-container-footer">
+                <h3>BCIT Part-Time Studies | Fall 2021 | COMP 2132 | Arno Princeston Pan | A00823325 </h3>
+                <h4><a href = "#top">TOP OF PAGE</a></h4>
+            </footer>
+        </div>
+
+        <div id = 'popUp'>
+            <section id = 'instructions-Box'>
+                <button id = 'closeButton'> &#10005; </button>
+                <h2>Instructions</h2>
+                <p>To rotate the view of the bike, click on the 'Start' animation button. Stop the animation by clicking the 'Stop' button.</p>
+            </section>
+        </div>
+
+        <script src = 'https://code.jquery.com/jquery-3.6.0.min.js'></script>
+        <script src = 'scripts/assignment07.js'></script>
+    </body>
+</html>

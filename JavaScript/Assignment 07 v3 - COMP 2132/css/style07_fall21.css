@@ -1,0 +1,283 @@
+@charset "utf-8";
+/*
+name : arno princeston pan
+class: comp 2132
+date : 11/24/2021
+update: v3
+notes: assignment 07 - animations
+*/
+
+html
+{
+	color: #2D2D2D; /* font colour*/
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box; 
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+body
+{
+	background: #FAE5DF;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 15px;
+}
+
+p
+{
+	font-size: larger;
+}
+
+header
+{
+	display: flex;
+	flex-direction: column; /* makes the "slogan" in column */
+	flex-wrap: wrap;
+	word-break: break-word;
+
+	font-family: 'Lora', sans-serif;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+main > ul > li
+{
+	font-weight: bold;
+}
+
+
+/* Containers */
+
+.flexbox-container-overall
+{
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100%;
+}
+
+.flexbox-container-header
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #EABACB;
+
+	max-width: 100%;
+
+	text-shadow: 2px 4px 4px grey;
+
+	border: 3px solid #33110E;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px #33110E;
+}
+
+.flexbox-container-main
+{
+	margin-top: 3px;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	max-width: 100%;
+
+	border: 3px solid #33110E;
+	border-radius: 3px;
+
+	background-color: #D1ADCC;
+}
+
+.content-Container
+{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+	width: 500px;
+	height: 400px;
+
+	margin: 5px;
+	padding: 5px;
+
+	border: 2px solid #303179;
+	border-radius: 3px;
+
+	background-color: #E4DDF4;
+}
+
+#bicycleDisplay
+{
+	margin-left: 3px;
+	max-height: 480px;
+	max-height: 327px;
+}
+
+.button-Container
+{
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+	padding: 8px;
+}
+
+.movementButtons
+{
+	border: 2px solid pink;
+	border-radius: 10px;
+
+	height: 30px;
+	width: 60px;
+
+	margin: 2px;
+
+}
+
+.flexbox-container-footer
+{
+	margin-top: 3px;
+	border-radius: 5px;
+	border: 3px solid #33110E;
+	text-shadow: 2px 4px 4px grey;
+	box-shadow: 3px 3px 3px #33110E;
+
+	display: flex;
+	background: #EABACB;
+}
+
+#popUp
+{
+	width: 100vw;
+	height: 100vh;
+
+	border: 1px solid black;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	background-color: rgba(150, 50, 200, 0.5);
+	opacity: 0;
+}
+
+#instructions-Box
+{
+	position: absolute;
+	
+	/* Move the instructions to the centre*/
+	top: 50%;
+	left: 50%;
+
+	/* Shift the contents from the centre to*/
+	transform: translate(-50%, -50%);
+
+	border: 1px solid seagreen;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightseagreen;
+
+	background-color: #FCE694;
+
+	padding: 5px;
+}
+
+#closeButton
+{
+	position: absolute;
+
+	top: 0px;
+	right: 0px;
+
+	width: 25px;
+	height: 25px;
+
+	color: red;
+
+	border: 1px solid forestgreen;
+	border-radius: 100px;
+}
+
+
+/* Link PseudoClasses */
+
+.movementButtons:hover
+{
+	background:lightpink;
+	box-shadow: inset 0px 0px 5px #C1C1C1;
+}
+
+a:link
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-transform: uppercase;
+	color: purple;
+	background: lightblue;
+}
+
+a:visited
+{
+	color: maroon;
+}
+
+a:active
+{
+	color: red;
+	background-color: orange;
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	
+	margin-top: -5px;
+
+	font-weight: bolder;
+}
+
+/* Other screen sizes */
+
+@media screen and (max-width: 320px)
+{
+
+}
+
+@media screen and (max-width: 415px)
+{
+	#bicycleDisplay
+	{
+		margin-left: 0px;
+		max-width: 100%;
+		max-height: 243px;
+	}
+
+	.content-Container
+	{
+		max-width: 343px;
+		max-height: 300px;
+	}
+}
+
+@media screen and (max-width: 1300px)
+{
+}
