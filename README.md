@@ -46,6 +46,10 @@
 
 ### JavaScript Interview
     A fun practice of an interview question that happened in December 2022. See markdown inside folder.
+    
+## MERN
+
+### Term Build-up Assignment that uses the MERN Stack to make API data useful. 
 
 ###### Note: Please see code for futher details.
 
