@@ -1,0 +1,344 @@
+/*
+This is a CSS Document.
+author: arno princeston pan	
+class : comp 1850
+date  : 09/29/2020
+notes : Midterm Project
+*/
+
+
+/* Remember NO program chosen defaults*/
+
+html
+{
+	box-sizing: border-box; 
+	font-family: arial, sans sanrif;
+	font-size: 1.0em;
+}
+
+/* Inherit */
+
+*, *:before, *:after
+{
+	box-sizing: inherit; 
+}
+
+/* Adjusts image to the maximum width but auto adjusts height*/
+
+img
+{
+	border: 3px black solid;
+	max-width: 100%;
+	height: auto;
+}
+
+header
+{
+	background: blueviolet;
+	height: 150x;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+body
+{
+	background: darkorchid;
+}
+
+h1
+{
+	font-size: 2.0em;
+	text-align: center;
+	color: white;
+	line-height: 150px;
+}
+
+h2
+{
+	font-size: 1.8em;
+}
+
+h3
+{
+	font-size: 1.6em;
+}
+
+h4
+{
+	font-size: 1.4em;
+}
+
+h5
+{
+	font-size: 1.2em;
+}
+
+nav
+{
+	background: dodgerblue;
+	border: 3px solid black;
+	border-radius: 10px;
+	margin: -3px;
+}
+
+
+#active-page
+{
+	background: maroon;
+	color: white;
+}
+
+footer
+{
+	color: ghostwhite;
+	background: blueviolet;
+	border: 3px solid black;
+	border-radius: 10px;
+	margin-top: -3px;
+}
+
+main
+{
+	margin: 10px;
+}
+
+article
+{
+	border: 3px black solid;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: row;
+	background: blueviolet;
+}
+
+section
+{
+	border: 3px black solid;
+	border-radius: 10px;
+	padding: 10px;
+    margin: 3px;
+    background: lavender;
+}
+
+aside
+{
+	border: 3px black solid;
+	border-radius: 10px;
+	padding: 10px;
+    margin: 3px;
+    background: lavender;
+}
+
+table
+{
+	border: 5px black double;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+td
+{
+	border: 3px black ridge;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.nav-ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.nav-li
+{
+	background: mediumslateblue;
+	box-sizing: border-box;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 18px 5px;
+	float: left;
+	height: 60px;
+	width: 25%;
+	margin: 0;
+	text-align: center;
+	
+}
+
+.footer-list
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footer-line
+{
+	color: white;
+	background: mediumorchid;
+	box-sizing: border-box;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 18px 5px;
+	float: left;
+	width: 100%;
+	margin: -5px;
+	text-align: center;
+}
+
+.mobile-footer
+{
+	display: none;
+	color: white;
+	background: mediumorchid;
+	box-sizing: border-box;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 18px 5px;
+	float: left;
+	width: 100%;
+	margin: -5px;
+	text-align: center;
+}
+
+.link-button
+{
+	box-sizing: border-box;
+	border-radius: 10px;
+	display: inline-flex;
+	align-items: center; 
+	padding: 10px;
+	margin: 1px;
+	border: 3px solid black;
+}
+
+
+/* media sizing*/
+
+@media screen and (max-width: 500px)
+{
+	
+	.nav-ul
+	{
+		flex-direction: column;
+	}
+	
+	.nav-li
+	{
+		width: 100%;
+	}
+	
+	article
+	{
+		flex-direction: column;
+	}
+	
+	iframe
+	{
+		height: 100%;
+	}
+
+
+}
+
+@media (max-width: 960px)
+{
+	article
+	{
+		flex-direction: column;
+	}
+	
+	iframe
+	{
+		height: 2200px;
+	}
+	
+}
+
+@media printer
+{
+	section ~ section
+	{
+		page-break-before: always;
+	}
+	
+	h1
+	{
+		page-break-after: avoid;
+	}
+	
+	h2
+	{
+		page-break-after: avoid;
+	}
+	
+	h3
+	{
+		page-break-after: avoid;
+	}
+	
+	h4
+	{
+		page-break-after: avoid;
+	}
+	
+	h5
+	{
+		page-break-after: avoid;
+	}
+	
+	h6
+	{
+		page-break-after: avoid;
+	}
+	
+	nav
+	{
+		display: none;
+	}
+	
+	aside
+	{
+		display: none;
+	}
+	
+	/* Makes External Links Easier to Print*/
+	
+	a[href*='//']:after
+	{
+		content:" ("attr(href) ") ";
+		color: $primary;
+	}
+	
+}
+
+/* pseudo classes for references */
+
+a:link
+{
+	color: oldlace;
+}
+
+a:visited
+{
+	color: firebrick;
+}
+
+a:hover
+{
+	color: gold;
+}
+
+a:active
+{
+	color: maroon;
+}
+
+

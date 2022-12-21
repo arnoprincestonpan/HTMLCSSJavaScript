@@ -1,0 +1,614 @@
+/*
+	name : arno princeston pan
+	class: comp 1850
+	date : 10/18/2020
+	ver  : 6.0
+	notes: homework 05, CBC.ca basic layout 
+	flexbox won't center header, only centers texts...I spent too much time on this
+*/
+
+*
+{
+	box-sizing: inherit;
+}
+
+html 
+{
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body
+{
+	margin: 0px;
+	background-color: blanchedalmond;
+}
+
+nav
+{
+	background-color: bisque;	
+}
+
+#wrapper
+{
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+}
+
+header
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: red;
+}
+
+header > div
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 1300px;
+}
+
+h2
+{
+	padding: 10px;
+	border-bottom: 1px solid grey;
+}
+
+/* Bonus Navigation*/
+
+
+#nav_wrapper
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: red;
+}
+
+nav > div 
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 1300px;
+}
+
+nav > div
+
+#nav_ul
+{
+	margin-left: -40px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	list-style-type:none;
+	width: 1300px;
+}
+
+.nav_a
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	color: black;
+}
+
+.nav_c
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	color: red;
+}
+
+.nav_a:link
+{
+	color: black;
+}
+
+.nav_a:hover
+{
+	text-decoration: underline;
+}
+
+/* Social Media */
+
+aside
+{
+	border: 1px solid black;
+	width:100px;
+	background-color: beige; 
+}
+
+/* Main - Centered*/
+
+main
+{
+	background-color: blanchedalmond;
+	flex:1;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+main > section
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 1300px;
+}
+
+main > section > section > div
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+main > section > section > div > article
+{
+	border: 1px solid black;
+}
+
+main > section > section > div > article:hover
+{
+	border: 2px solid lightgrey;
+}
+
+/* Welcome Column*/
+
+#welcome_grid
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 15px;
+	margin-bottom: 15px;
+}
+
+#headline_article
+{
+	grid-column: 1/4;
+	grid-row: 1/3;
+	width: 100%;
+}
+
+#article1
+{
+	grid-column: 1/2;
+	grid-row: 3/5;
+}
+
+#article2
+{
+	grid-column: 2/3;
+	grid-row: 3/5;
+}
+
+#article3
+{
+	grid-column: 3/4;
+	grid-row: 3/5;
+}
+
+#article4
+{
+	grid-column: 1/2;
+	grid-row: 5/7;
+}
+
+#article5
+{
+	grid-column: 2/3;
+	grid-row: 5/7;
+}
+
+#article6
+{
+	grid-column: 3/4;
+	grid-row: 5/7;
+}
+
+#welcome_aside
+{
+	grid-column: 4/5;
+	grid-row: 1;
+	width: 100%;
+}
+
+/* CBC Column*/
+
+#cbc_grid
+{
+	margin-bottom: 15px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 350px;
+	grid-gap: 15px;
+}
+
+#cbc1
+{
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+#cbc2
+{
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+#cbc3
+{
+	grid-column: 3/4;
+	grid-row: 1;
+}
+
+#cbc4
+{
+	grid-column: 4/5;
+	grid-row: 1;
+}
+
+/* My Local Column*/
+
+#local_grid
+{
+	margin-bottom: 15px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 350px;
+	grid-gap: 15px;
+}
+
+#local1
+{
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+#local2
+{
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+#local3
+{
+	grid-column: 3/4;
+	grid-row: 1;
+}
+
+#local4
+{
+	grid-column: 4/5;
+	grid-row: 1;
+}
+
+/* More Column*/
+
+#more_grid
+{
+	margin-bottom: 15px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 15px;
+}
+
+#grid1
+{
+	grid-column: 1/2;
+	grid-row: 1;
+	height: 175px;
+}
+
+#grid2
+{
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+#grid3
+{
+	grid-column: 3/4;
+	grid-row: 1;
+}
+
+#grid4
+{
+	grid-column: 4/5;
+	grid-row: 1;
+}
+
+#grid5
+{
+	grid-column: 1/2;
+	grid-row: 2;
+}
+
+#grid6
+{
+	grid-column: 2/3;
+	grid-row: 2;
+}
+
+#grid7
+{
+	grid-column: 3/4;
+	grid-row: 2;
+}
+
+#grid8
+{
+	grid-column: 4/5;
+	grid-row: 2;
+}
+
+footer
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: black;
+	color: white;
+	height:60px;
+}
+
+footer > small
+{
+	text-align: center;
+	width: 33.33%;
+}
+
+/* Half Screen*/
+
+@media only screen and (max-width: 960px)
+{	
+	/* Welcome Column (Half-Screen)*/
+	
+	body
+	{
+		width: 750px;
+	}
+	
+	header
+	{
+		width: 100%;
+	}
+	
+	
+	#nav_wrapper
+	{
+		width: 100%;
+	}
+	
+	
+	main > section > section > div
+	{
+		padding: 15px;
+	}
+
+	#welcome_grid
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	#headline_article
+	{
+		width: 100%;
+		height: 420px;
+	}
+
+	#article1, #article2, #article3, #article4, #article5, #article6
+	{
+		width: 31.8%;
+		height: 375px;
+	}
+
+	#welcome_aside
+	{
+		padding: 10px;
+		width: 100%;
+		height: 300px;
+	}
+	
+	/* CBC Column*/
+
+	#cbc_grid
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#cbc1, #cbc2, #cbc3, #cbc4
+	{
+		height: 375px;
+		width: 48.9%;
+	}
+	
+	/* My Local Column*/
+
+	#local_grid
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#local1, #local2, #local3, #local4
+	{
+		height: 375px;
+		width: 48.9%;
+	}
+	
+	/* More Column*/
+
+	#more_grid
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#grid1, #grid2, #grid3, #grid4, #grid5, #grid6, #grid7, #grid8, #grid9, 
+		#grid10, #grid11, #grid12, #grid13, #grid14, #grid15, #grid16
+	{
+		height: 185px;
+		width: 48.9%;
+	}
+	
+	nav > div 
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 750px;
+	}
+	
+}
+
+/* Smallest */
+
+/*Should work on 320px x 480px*/
+@media only screen and (max-width: 320px)
+{	
+	/* Welcome Column (Smaller)*/
+	*
+	{
+		color: orange;
+	}
+	
+	html
+	{
+		width: 320px;
+	}
+	
+	
+	body
+	{
+		width: 320px;
+	}
+	
+	header
+	{
+		width: 100%;
+	}
+	
+	
+	#nav_wrapper
+	{
+		width: 100%;
+	}
+	
+	
+	main > section > section > div
+	{
+		padding: 15px;
+	}
+
+	#welcome_grid
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	#headline_article
+	{
+		width: 100%;
+		height: 420px;
+	}
+
+	#article1, #article2, #article3, #article4, #article5, #article6
+	{
+		width: 100%;
+		height: 375px;
+	}
+
+	#welcome_aside
+	{
+		padding: 10px;
+		width: 100%;
+		height: 300px;
+	}
+	
+	/* CBC Column*/
+
+	#cbc_grid
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#cbc1, #cbc2, #cbc3, #cbc4
+	{
+		height: 375px;
+		width: 100%;
+	}
+	
+	/* My Local Column*/
+
+	#local_grid
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#local1, #local2, #local3, #local4
+	{
+		height: 375px;
+		width: 100%;
+	}
+	
+	/* More Column*/
+
+	#more_grid
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#grid1, #grid2, #grid3, #grid4, #grid5, #grid6, #grid7, #grid8, #grid9, 
+		#grid10, #grid11, #grid12, #grid13, #grid14, #grid15, #grid16
+	{
+		height: 185px;
+		width: 100%;
+	}
+	
+	nav > div 
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 320px;
+	}
+	
+}
+
+
+

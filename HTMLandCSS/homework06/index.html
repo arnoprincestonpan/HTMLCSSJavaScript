@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>homework 06</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/homework06.css" />
+	</head>
+	<body>
+		<header id="headerwrapper">
+			<h1>Homework #06</h1>
+			<p>Practicing HTML's Attribute Forms and its' CSS Styling</p>
+		</header>
+		<main>
+			<form	action="http://bcitcomp.ca/comp1850_homework06.php"
+					method="post"
+					class="placeholders">
+				
+				<!--
+				Reminder of how things work for html forms
+				type: will determine what type of form you want to usemap
+				name: what the HTTP receives and your browser sends (the input data)
+				id  : what javascript, html and css sees to identify an element
+				placeholder: for type="text" it's the grey placeholder for the text prompted
+				value: is the pre-determined "choice" you have made for the input that would go into name
+				-->
+				
+				<section id="namewrapper">
+				
+					<h2>Name</h2>
+				
+					<input	type="text"
+							name="firstname"
+							id="firstname"
+							placeholder="your first name"	/>
+					
+					<input	type="text"
+							name="lastname"
+							id="lastname"
+							placeholder="your last name"	/>
+							
+					<input	type="text"
+							name="studentnumber"
+							id="studentnumber"
+							placeholder="your student number"	/>
+						
+				</section>
+				
+				<section id="prefixwrapper">
+					
+					<h2>Prefix</h2>
+				
+					<fieldset>
+						<legend>Please choose your prefix</legend>
+						<div>
+							<input	type="radio"
+									name="prefix"
+									id="mr" 
+									value="mr"	/>
+							<label	for="mr">mr</label>
+						</div>
+						
+						<div>
+							<input	type="radio"
+									name="prefix"
+									id="mrs"
+									value="mrs"	/>
+							<label	for="mrs">mrs</label>
+						</div>
+						
+						<div>
+							<input	type="radio"
+									name="prefix"
+									id="ms"
+									value="ms"	/>
+							<label	for="ms">ms</label>
+						</div>
+					</fieldset>
+				
+				</section>
+				
+				<section id="courseswrapper">
+				
+					<h2>Courses</h2>
+					
+					<fieldset>
+						<legend>Optional: Select courses you may want to register for.</legend>
+						
+						<div>
+							<input	type="checkbox"
+									name="courses"
+									id="comp1850"
+									value="comp1850"	/>
+							<label for="comp1850">comp1850</label>
+						</div>
+						
+						<div>
+							<input	type="checkbox"
+									name="courses"
+									id="comp1950"
+									value="comp1950"	/>
+							<label for="comp1950">comp1950</label>
+						</div>
+						
+						<div>
+							<input	type="checkbox"
+									name="courses"
+									id="comp1409"
+									value="comp1409"	/>
+							<label for="comp1409">comp1409</label>
+						</div>
+						
+						<div>
+							<input	type="checkbox"
+									name="courses"
+									id="comp1630"
+									value="comp1630"	/>
+							<label for="comp1630">comp1630</label>
+						</div>
+						
+						<div>
+							<input	type="checkbox"
+									name="courses"
+									id="comp2015"
+									value="comp2015"	/>
+							<label for="comp2015">comp2015</label>
+						</div>
+						
+						<div>
+							<input	type="checkbox"
+									name="courses"
+									id="comp3015"
+									value="comp3015"	/>
+							<label for="comp3015">comp3015</label>
+						</div>
+								
+					</fieldset>
+				</section>
+				
+				<section id="commentswrapper">
+					<h2>Comment</h2>
+						<div>
+							<p>If you have any additional comments or questions please leave them in the textbox below.</p>
+							<textarea	name="comments"
+										placeholder="leave your comments here"
+										id="comments"></textarea>
+						</div>
+				</section>
+				
+				<section id="submitwrapper">
+					<h2>Submission</h2>
+					<div>
+						<input type="submit" name="submit"	/>
+					</div>
+				</section>
+				
+			</form>
+		</main>
+		
+		<footer>
+			<h3>BCIT | COMP 1850 | Arno Princeston Pan</h3>
+		</footer>
+	</body>
+</html>

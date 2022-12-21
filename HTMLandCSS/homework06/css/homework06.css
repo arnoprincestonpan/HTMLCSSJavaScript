@@ -1,0 +1,205 @@
+/*
+notes: homework06
+*/
+
+html
+{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+body
+{
+	background-color: #E1F5FE;
+}
+
+main
+{
+	width: 100%;
+}
+
+form
+{
+	width: 100%;
+}
+
+h1
+{
+	text-transform: uppercase;
+	font-family: times new roman;
+	color: #01579B;
+	text-shadow: 5px 5px 5px white;
+}
+
+h2
+{
+	font-family: arial;
+	color: #01579B;
+	text-shadow: 5px 5px 5px #29B6F6;
+}
+
+textarea
+{
+	width: 100%;
+	background-color: #FFFDE7;
+	color: navy;
+	font-family: georgia;
+}
+
+input[type="text"]:focus
+{
+	box-shadow: 0 0 10px red;
+}
+
+input[type="radio"]
+{
+	transform: scale(1.5);
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 1px solid black;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	background: #80D8FF;
+}
+
+footer > h3
+{
+	font-style: oblique;
+	font-family: times new roman;
+	color: #01579B;
+	text-shadow: 5px 5px 5px white;
+}
+
+#headerwrapper
+{
+	border: 1px solid black;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: #80D8FF;
+}
+
+#headerwrapper > p
+{
+	font-family: oblique;
+	font-family: times new roman;
+	color: #01579B;
+	text-shadow: 5px 5px 5px white;
+}
+
+#namewrapper, #prefixwrapper
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin: 20px;
+	background: #B3E5FC;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+#namewrapper > input
+{
+	max-width: 300px;
+	text-transform: capitalize;
+	border-radius: 3px;
+	font-size: 18px;
+	font-style: italic;
+	background: #FFFDE7;
+	color: navy;
+}
+
+#prefixwrapper > fieldset
+{
+	max-width: 300px;
+	font-family: arial;
+	color: #0288D1;
+	text-shadow: 5px 5px 5px white;
+}
+
+#prefixwrapper > fieldset > div
+{
+	border: 1px solid black;
+	text-transform: capitalize;
+	margin: 5px;
+	background: #FFFDE7;
+	font-size: 20px;
+	color: black;
+}
+
+#courseswrapper
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin: 20px;
+	background: #B3E5FC;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+#courseswrapper > fieldset
+{
+	color: #0288D1;
+	text-shadow: 5px 5px 5px white;
+	font-family: arial;
+	max-width: 300px;
+}
+
+#courseswrapper > fieldset > div
+{
+	border: 1px solid black;
+	text-transform: uppercase;
+	margin: 5px;
+	background: #FFFDE7;
+	color: black;
+	font-size: 20px;
+}
+
+#commentswrapper
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin: 20px;
+	background: #B3E5FC;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+#commentswrapper
+{
+	font-style: oblique;
+	font-family: arial;
+	color: #01579B;
+	text-shadow: 5px 5px 5px white;
+}
+
+#submitwrapper
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin: 20px;
+	background: #B3E5FC;
+	padding: 5px;
+	border: 1px solid black;
+}
