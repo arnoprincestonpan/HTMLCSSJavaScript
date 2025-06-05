@@ -108,14 +108,19 @@ class Deck{
 
         // reminder: you need Card(face, value, suit);
 
-        for(let z = 0; z < this.suits.length; z++){
+        // for(let z = 0; z < this.suits.length; z++){
         
-            for(let y = 0; y < this.values.length; y++){
-                this.cards.push(new Card(this.faces[y], this.values[y], this.suits[z]));
-            }
-        }
+        //     for(let y = 0; y < this.values.length; y++){
+        //         this.cards.push(new Card(this.faces[y], this.values[y], this.suits[z]));
+        //     }
+        // }
 
         // some other way
+        this.faces.map((face, index) => {
+            this.suits.map((suit) => {
+                this.cards.push(new Card(face, this.values[index], suit));
+            })
+        });
 
         
     }
