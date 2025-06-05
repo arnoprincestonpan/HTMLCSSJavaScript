@@ -75,9 +75,14 @@ BONUS
 FIND A Card IMG and display it
 */
 Card.prototype.getFigure = function(){
-    let imageName = `${typeof this.face === typeof number? String(this.face) : this.face.toLowerCase()}_of_${this.suit.toLowerCase()}.svg`;
+    let imageName = `${String(this.face).toLowerCase()}_of_${this.suit.toLowerCase()}.svg`;
     let imagePath = `../card_images/SVG-cards/${imageName}`;
-    return `<img src="${imagePath}" alt="${this.face} of ${this.suit}" width="100" height="150">`;
+    return `
+    <figure>
+        <img src="${imagePath}" alt="${this.describeSelf()}" style="width: 100px; height: auto;" />
+        <figcaption>${this.describeSelf()}</figcaption>
+    </figure>
+    `;
 }
 
 /*
@@ -88,7 +93,7 @@ display the value returned by the describeSelf() function
 
 const someCard = new Card("King", 10, "Hearts"); // instructions says to initialize King of Hearts
 
-output.innerHTML += `${someCard.describeSelf()}`;
+// output.innerHTML += `${someCard.describeSelf()}`;
 
 output.innerHTML += `${someCard.getFigure()}`; // BONUS: display the card image
 
@@ -105,7 +110,7 @@ class Deck{
         //prepare arrays for all the aspects of a Card
         this.faces   = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King"];    // y 13 elements, index 0 to 12      
         this.values  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];                     // y Same as Above
-        this.suits   = ["Spade","Club","Heart","Diamond"];                              // z 4 elements, index 0 to 3
+        this.suits   = ["Spades","Clubs","Hearts","Diamonds"];                              // z 4 elements, index 0 to 3
         
         //prepare an array to store the Cards in
         this.cards = [];
@@ -201,9 +206,12 @@ var dealedCard = someDeck.dealCard();
 
 const delt = `You have been delt...`;
 
+console.log(dealedCard); // log the dealt card to the console
+
 output2.innerHTML += `<p>${delt}</p>`;
 
-output2.innerHTML += `<p>${dealedCard.describeSelf()}</p>`; // describes the card
+// output2.innerHTML += `<p>${dealedCard.describeSelf()}</p>`; // describes the card
+output2.innerHTML += dealedCard.getFigure(); // BONUS: display the card image
 
 //invoke and display the Deck function describeSelf() AGAIN here...
 
@@ -215,7 +223,8 @@ dealedCard = someDeck.dealCard();
 
 output2.innerHTML += `<p>${delt}</p>`;
 
-output2.innerHTML += `<p>${dealedCard.describeSelf()}</p>`; // describes the card
+// output2.innerHTML += `<p>${dealedCard.describeSelf()}</p>`; // describes the card
+output2.innerHTML += dealedCard.getFigure(); // BONUS: display the card image
 
 //invoke and display the Deck function describeSelf() AGAIN here...
 
