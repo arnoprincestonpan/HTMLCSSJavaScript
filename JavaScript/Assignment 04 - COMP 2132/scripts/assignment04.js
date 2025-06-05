@@ -281,13 +281,15 @@ class Player
         let returnString = ``;
         returnString += `<p>The player: ${this.playerName} hand has ${this.hand.length} card(s)...</p>`;
 
-        returnString += `<ol>`;
+        returnString += `<ol style="list-style-type: none; padding: 0; margin: 0; display: flex; flex-direction: row;">`; // BONUS: display the card image
 
         if(this.hand.length != 0)
         {
             for(let i = 0; i < this.hand.length; i++)
             {
-                returnString += `<li>${this.hand[i].describeSelf()}</li>`;
+                returnString += `<li>`;
+                returnString += `${this.hand[i].getFigure()}`; // BONUS: display the card image
+                returnString += `</li>`;
             }
         }
         else
@@ -299,6 +301,7 @@ class Player
 
         return(returnString);
     }
+
 }
 
 
