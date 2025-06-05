@@ -71,6 +71,16 @@ class Card{
 
 
 /*
+BONUS
+FIND A Card IMG and display it
+*/
+Card.prototype.getFigure = function(){
+    let imageName = `${typeof this.face === typeof number? String(this.face) : this.face.toLowerCase()}_of_${this.suit.toLowerCase()}.svg`;
+    let imagePath = `../card_images/SVG-cards/${imageName}`;
+    return `<img src="${imagePath}" alt="${this.face} of ${this.suit}" width="100" height="150">`;
+}
+
+/*
 PART 1b
 INSTANTIATE A Card OBJECT and 
 display the value returned by the describeSelf() function
@@ -79,6 +89,8 @@ display the value returned by the describeSelf() function
 const someCard = new Card("King", 10, "Hearts"); // instructions says to initialize King of Hearts
 
 output.innerHTML += `${someCard.describeSelf()}`;
+
+output.innerHTML += `${someCard.getFigure()}`; // BONUS: display the card image
 
 
 /*
